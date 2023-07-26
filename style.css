@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* clock background */
+
+#main{
+	height:500px;
+	width:500px;
+	margin:5% auto;
+	background-size:cover;
+	position:relative;
+}
+
+
+.clock-dial{
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+    background: skyblue;
+    box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
+                inset 4px 4px 10px rgba(0,0,0,0.5),
+                inset -4px -4px 10px rgba(67,67,67,0.5),
+                4px 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+    border: 15px solid #16344f;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+/* dot inside clock */
+
+.point{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(79, 68, 64);
+    border: 3px solid #d9701b;
+    position: absolute;
+    border-radius: 50%;
+    top:240px;
+    left:248px;
+}
+
+
+/* for number inside clock */
+
+.hour{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+}
+
+.hour-1{
+    bottom: 175px;
+    left: 100px;
+}
+
+.hour-2{
+    bottom: 100px;
+    left: 180px;
+}
+
+.hour-6{
+    top: 200px;
+    right: 10px;
+    color:#d9701b
+}
+
+.hour-4{
+    top: 95px;
+    left: 180px;
+}
+
+.hour-5{
+    top: 170px;
+    left: 110px;
+}
+
+.hour-3{
+    bottom: 0;
+    left: 215px;
+    color:#d9701b
+}
+
+.hour-7{
+    top: 185px;
+    right: 115px;
+    bottom: 40;
+}
+
+.hour-8{
+    top: 90px;
+    right: 200px;
+}
+
+.hour-12{
+    bottom: 200px;
+    right: 0;
+    color:crimson;
+}
+
+.hour-10{
+    bottom: 170px;
+    right: 120px;
+}
+
+.hour-11{
+    bottom: 90px;
+    right: 190px;
+}
+
+.hour-9{
+    bottom: 0;
+    right: 225px;
+    color:#d9701b
+}
+
+/* brands */
+
+.brand{
+    font-size: 20px;
+    font-weight: bold;
+    color: chocolate;
+    position: absolute;
+    bottom: 140px;
+    left: -30px;
+}
+
+.brand2{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: oblique;
+    position: absolute;
+    top: 140px;
+    right: -20px;
+    color:darkgreen;
+}
+
+/* clock dials (hour,minute,seconds) */
+
+#hour{
+	height:115px;
+	width:8px;
+	background-color:black;
+	position:absolute;
+	transform-origin:bottom;
+	top:120px;
+	left:241px;
+}
+
+#min{
+	height:140px;
+	width:5px;
+	background-color:black;
+	position:absolute;
+	top:100px;
+	left:241px;
+	transform-origin:bottom;
+}
+
+#sec{
+	height:155px;
+	width:3px;
+	background-color:black;
+	position:absolute;
+	top:80px;
+	left:241px;
+	transform-origin:bottom;
+} 
+
+/* real time clock */
+
+body {
+   text-align: center;
+   margin-top: 100px;
+   font-size: 50px;
+   font-weight: 600;
+   color: #333;
+   background-color:wheat;
+}
+
+#btn{
+    height: 50px;
+    width: 160px;
+    background-color: rgb(23, 46, 88);
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: large;
+    margin-bottom: 5px;
+}
